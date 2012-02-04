@@ -170,6 +170,23 @@
         <incoming uri="pop3://incoming.verizon.net" username="$user" />
         <outgoing uri="smtp://outgoing.verizon.net" username="$user" />
     </provider>
+    <!-- Various .edu domains -->
+    <provider id="montclair.edu" label="MSU" domain="montclair.edu">
+        <incoming uri="imap+ssl+://mail.montclair.edu" username="$user" />
+        <outgoing uri="smtp+tls+://smtp.montclair.edu" username="$user" />
+    </provider>
+    <provider id="ucla" label="UCLA" domain="ucla.edu">
+        <incoming uri="imap+tls+://mail.ucla.edu" username="$user" />
+        <outgoing uri="smtp+tls+://mail.ucla.edu" username="$user" />
+    </provider>
+    <provider id="cal" label="UC Berkeley" domain="berkeley.edu">
+        <incoming uri="imap+tls+://calmail.berkeley.edu" username="$user" />
+        <outgoing uri="smtp+tls+://calmail.berkeley.edu" username="$user" />
+    </provider>
+    <provider id="calmail" label="UC Berkeley" domain="calmail.berkeley.edu">
+        <incoming uri="imap+tls+://calmail.berkeley.edu" username="$user" />
+        <outgoing uri="smtp+tls+://calmail.berkeley.edu" username="$user" />
+    </provider>
 
     <!-- Yahoo! Mail Variants -->
     <provider id="yahoo" label="Yahoo" domain="yahoo.com">
